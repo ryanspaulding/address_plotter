@@ -1,12 +1,23 @@
-<!--#set var="TITLE" value="Address Plotter" -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
 
-<!--#set var="DESCRIPTION" value="Plot a list of addresses around a single address using the Google Maps API" -->
 
-<!--#set var="KEYWORDS" value="Google Maps API, Address Plotting" -->
+		<title>Address Plotter</title>
+		
+		
+		<link rel="stylesheet" href="address_plotter.css" type="text/css" />
+		<script language="javascript" type="text/javascript" src="address_plotter.js"></script>
+		<script language="javascript" type="text/javascript" src="http://maps.google.com/maps?file=api&amp;v=2.x&amp;key=ABQIAAAAWlC9omRF09rKJYfekCNfGBRR8oipsT2kY-Q68JgEYtcx8JuHSBRxKnOCtZ2zEzxfqKyK9hjGJBsgWg"></script>
 
-<!--#set var="MAPS" value="True" -->
 
-<!--#include virtual="/header.shtml"-->
+		<meta name="description" lang="en-us" content="Plot a list of addresses around a single address using the Google Maps API" />
+
+		<meta name="keywords" lang="en-us" content="Google Maps API, Address Plotting" />
+
+	</head>
+<body onload="initialize();" onunload="GUnload();">
 
 <h3>Address Plotter</h3>
 <p>
@@ -36,11 +47,6 @@
 	<input type="submit" name="submit" value="Plot Addresses" />
 	
 </form>			
-				
-</div><!-- end content_inner_left -->
 
-
-<!--your page specific content ends above this line-->
-
-<!-- file calls remaining HTML text -->
-<!--#include virtual="/footer.shtml"-->
+	</body>
+</html>
