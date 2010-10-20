@@ -1,0 +1,46 @@
+<!--#set var="TITLE" value="Address Plotter" -->
+
+<!--#set var="DESCRIPTION" value="Plot a list of addresses around a single address using the Google Maps API" -->
+
+<!--#set var="KEYWORDS" value="Google Maps API, Address Plotting" -->
+
+<!--#set var="MAPS" value="True" -->
+
+<!--#include virtual="/header.shtml"-->
+
+<h3>Address Plotter</h3>
+<p>
+ We originally wrote this code so we could see where people lived relative to our church. We then thought that other people might want to plot addresses around a single address. The code below will allow you to do the same thing using the Google Maps API.
+</p>
+<div id="map_canvas"></div>
+<div id="map_content">
+	
+	<p>
+	First input an address to plot around: <input type="text" name="center_address" id="center_address" />
+	</p>
+	<p>
+	Then put a list of addresses you would like placed on the map. After each address press the return key to ensure that a new line is created. The script is separating each address by a carriage return (\n). For example:
+	<p>
+	15980 Los Gatos Boulevard Los Gatos, CA 95032-3424<br />
+	15466 Los Gatos Boulevard Los Gatos, CA 95032-2551
+	</p>
+</div>
+<form method="post" onsubmit="return plotAddresses();">
+	
+	<textarea name="addresses" id="addresses">
+		
+	</textarea>
+	<p>
+		Once you hit submit your center address will be an orange map marker and then your other address will all be red markers.
+	<p>
+	<input type="submit" name="submit" value="Plot Addresses" />
+	
+</form>			
+				
+</div><!-- end content_inner_left -->
+
+
+<!--your page specific content ends above this line-->
+
+<!-- file calls remaining HTML text -->
+<!--#include virtual="/footer.shtml"-->

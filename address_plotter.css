@@ -1,0 +1,23 @@
+
+#map_canvas {
+	width: 875px;
+	height: 500px;
+}
+
+form {
+	padding-top: 20px;
+}
+
+textarea {
+	width: 875px;
+	height: 200px;
+}
+
+#map_content {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 875px;
+	font-family: Verdana;
+	font-size: 12px;
+	font-color: #333333
+}
