@@ -13,6 +13,7 @@
 		
 		<link rel="stylesheet" href="address_plotter.css" type="text/css" />
 		<script language="javascript" type="text/javascript" src="address_plotter.js"></script>
+		<script language="javascript" type="text/javascript" src="jquery.min.js"></script>
 		<script language="javascript" type="text/javascript" src="http://maps.google.com/maps?file=api&amp;v=2.x&amp;key=ABQIAAAAWlC9omRF09rKJYfekCNfGBRR8oipsT2kY-Q68JgEYtcx8JuHSBRxKnOCtZ2zEzxfqKyK9hjGJBsgWg"></script>
 
 
@@ -27,11 +28,19 @@
 <p>
  We originally wrote this code so we could see where people lived relative to our church. We then thought that other people might want to plot addresses around a single address. The code below will allow you to do the same thing using the Google Maps API.
 </p>
+<p>
+Below the following addresses (red map tags) around "15980 Blossom Hill Road, Los Gatos, CA 95032" (orange map tag):
+<p>
+<ul>
+<li>15980 Los Gatos Boulevard Los Gatos, CA 95032-3424</li>
+<li>15466 Los Gatos Boulevard Los Gatos, CA 95032-2551</li>
+</ul>
 <div id="map_canvas"></div>
+<div id="error_message"></div>
 <div id="map_content">
 	
 	<p>
-	First input an address to plot around: <input type="text" name="center_address" id="center_address" />
+	First input an address to plot around: <input type="text" name="center_address" id="center_address" /><span id="center_address_error"></span>
 	</p>
 	<p>
 	Then put a list of addresses you would like placed on the map. After each address press the return key to ensure that a new line is created. The script is separating each address by a carriage return (\n). For example:
@@ -42,9 +51,7 @@
 </div>
 <form method="post" onsubmit="return plotAddresses();">
 	
-	<textarea name="addresses" id="addresses">
-		
-	</textarea>
+<textarea name="addresses" id="addresses" /></textarea><span id="addresses_error"></span>
 	<p>
 		Once you hit submit your center address will be an orange map marker and then your other address will all be red markers.
 	<p>
