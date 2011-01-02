@@ -4,15 +4,11 @@ Have you ever wanted to see where a list of addresses where relative to a specif
 
 This is currently on my website if you want to try it out:
 
-http://www.spauldinghill.org/software/address_plotter/
+<a href="http://www.spauldinghill.org/software/address_plotter/">http://www.spauldinghill.org/software/address_plotter/</a>
 
 ## Setup
 
-**Get Source**
-
-**Get Google Maps API**
-
-**Start Plotting**
+If you want to run this code on your site you will need to get a <a href="http://code.google.com/apis/maps/signup.html">Google Maps API Key</a>.
 
 ## Problems ? 
 
